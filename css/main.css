@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5bffff;
+  background: #6c752a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2908,7 +2908,7 @@ hr {
   animation: heartAnimate 1.33s ease-in-out infinite;
 }
 .with-love {
-  color: #ff71a8;
+  color: #d20000;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
