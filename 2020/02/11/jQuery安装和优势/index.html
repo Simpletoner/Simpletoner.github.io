@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Simpletoner&#39;s Blog">
 <meta property="og:description" content="​        在接触jQuery之前，我们首先要学习js，但是通过学习js我们也能够看得出来，js虽然可以实现很多功能，但也有其不足的地方，比如：  1. 不能添加多个入口函数（windos.onload）,如果添加多个，后面会覆盖前 2. 原生js的api都太长太繁琐难记 3. 原生js代码冗余太多 4. 原生js有些属性或者方法有浏览器兼容问题 5. 原生js容错率太低，前面的代码出了问题">
 <meta property="article:published_time" content="2020-02-11T08:28:25.000Z">
-<meta property="article:modified_time" content="2020-02-11T09:34:02.703Z">
+<meta property="article:modified_time" content="2020-02-15T07:02:15.408Z">
 <meta property="article:author" content="LvYan">
 <meta property="article:tag" content="jQuery">
 <meta name="twitter:card" content="summary">
@@ -389,7 +389,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  677
+                  755
                 </span>
               
 
@@ -405,7 +405,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -456,6 +456,16 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">	<span class="comment">//入口函数</span></span><br><span class="line">	$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="comment">//设置边框</span></span><br><span class="line">		$(<span class="string">'#btn1'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			$(<span class="string">'div'</span>).css(<span class="string">'border'</span>,<span class="string">'1px solid red'</span>);</span><br><span class="line">		&#125;);</span><br><span class="line">		$(<span class="string">'#btn2'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			$(<span class="string">'div'</span>).text(<span class="string">'我是设置的文本'</span>);</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>实现了相同的效果，但是代码量却相差巨大，这便是jquery最直观的优势。</p>
+<p>由此我们可以发现以下几点jQuery的优势：</p>
+<blockquote>
+<ol>
+<li>是可以写多个入口函数的</li>
+<li>jQuery的api名字都容易记忆</li>
+<li>jQuery代码简洁（隐式迭代）</li>
+<li>jQuery帮我们解决了浏览器兼容问题</li>
+<li>容错率高，前面代码出问题，后面代码不受影响</li>
+</ol>
+</blockquote>
 
       
     </div>
