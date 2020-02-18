@@ -113,8 +113,10 @@
 <meta property="og:image" content="http://yoursite.com/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/8.png">
 <meta property="og:image" content="http://yoursite.com/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/D:%5CBLOG%5Csource_posts%5Cdom%E5%AF%B9%E8%B1%A1%E5%92%8CjQuery%E5%AF%B9%E8%B1%A1%5C9.png">
 <meta property="og:image" content="http://yoursite.com/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/10.png">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/D:%5CBLOG%5Csource_posts%5Cdom%E5%AF%B9%E8%B1%A1%E5%92%8CjQuery%E5%AF%B9%E8%B1%A1%5C11.png">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/D:%5CBLOG%5Csource_posts%5Cdom%E5%AF%B9%E8%B1%A1%E5%92%8CjQuery%E5%AF%B9%E8%B1%A1%5C12.png">
 <meta property="article:published_time" content="2020-02-15T07:04:05.000Z">
-<meta property="article:modified_time" content="2020-02-17T18:22:05.427Z">
+<meta property="article:modified_time" content="2020-02-18T17:35:27.978Z">
 <meta property="article:author" content="LvYan">
 <meta property="article:tag" content="jQuery">
 <meta name="twitter:card" content="summary">
@@ -483,16 +485,45 @@
 <li><p>层级选择器</p>
 <p><img src="/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/10.png" alt></p>
 <ul>
-<li><p><strong>注意</strong></p>
+<li><strong>注意</strong></li>
+</ul>
 <p>如果我们要获取id为father的所有子<div>以及所有子<p>，该怎么写？</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#father&gt;div,p'</span>);<span class="comment">//这样是错误的，这样会获取到当前father下的所有div以及当前页面所有的p，而不是当前father下的所有p</span></span><br><span class="line">$(<span class="string">'#father&gt;div,#father&gt;p'</span>);<span class="comment">//这样才是正确的</span></span><br></pre></td></tr></table></figure>
-
 </div></p></li>
+<li><p>过滤选择器</p>
+<p><img src="/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/D:%5CBLOG%5Csource_posts%5Cdom%E5%AF%B9%E8%B1%A1%E5%92%8CjQuery%E5%AF%B9%E8%B1%A1%5C11.png" alt></p>
+</li>
+<li><p>类似于过滤选择器的方法</p>
+<p><img src="/2020/02/15/jQuery%E7%9A%84%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8/D:%5CBLOG%5Csource_posts%5Cdom%E5%AF%B9%E8%B1%A1%E5%92%8CjQuery%E5%AF%B9%E8%B1%A1%5C12.png" alt></p>
+</li>
+</ol>
+</blockquote>
+<h4 id="九、jQuery设置下拉菜单"><a href="#九、jQuery设置下拉菜单" class="headerlink" title="九、jQuery设置下拉菜单"></a>九、jQuery设置下拉菜单</h4><blockquote>
+<p><a href="https://www.bilibili.com/video/av40716170?p=16" target="_blank" rel="noopener">https://www.bilibili.com/video/av40716170?p=16</a></p>
+</blockquote>
+<h4 id="十、鼠标事件"><a href="#十、鼠标事件" class="headerlink" title="十、鼠标事件"></a>十、鼠标事件</h4><blockquote>
+<ol>
+<li><p>鼠标移入事件</p>
+<ul>
+<li><p>mouseover    事件在鼠标移动到选取的元素以及<strong>子元素</strong>时触发</p>
+</li>
+<li><p>mouseenter     事件只在鼠标移动到选取的元素上时触发</p>
+<p><strong>（以后如果有鼠标移入事件，推荐使用mouseenter；具体使用还需视情况而定）</strong></p>
+</li>
+</ul>
+</li>
+<li><p>鼠标离开事件</p>
+<ul>
+<li><p>mouseout    事件在鼠标离开选取的元素以及<strong>子元素</strong>时触发</p>
+</li>
+<li><p>mouseleave     事件只在鼠标移动到选取的元素上时触发</p>
+<p><strong>(以后如果有鼠标离开事件，推荐使用mouseleave；具体使用还需视情况而定)</strong></p>
+</li>
 </ul>
 </li>
 </ol>
 </blockquote>
-
+<h4 id="十一、高亮显示"><a href="#十一、高亮显示" class="headerlink" title="十一、高亮显示"></a>十一、高亮显示</h4>
         
       </div>
       
@@ -566,7 +597,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -655,7 +686,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、什么是jQuery"><span class="nav-number">1.</span> <span class="nav-text">一、什么是jQuery</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、-如何使用jQuery（简单了解）"><span class="nav-number">2.</span> <span class="nav-text">二、 如何使用jQuery（简单了解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、jQuery的各个版本"><span class="nav-number">3.</span> <span class="nav-text">三、jQuery的各个版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、jQuery的入口函数"><span class="nav-number">4.</span> <span class="nav-text">四、jQuery的入口函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、jQuery中的"><span class="nav-number">5.</span> <span class="nav-text">五、jQuery中的   $</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、设置和获取文本内容"><span class="nav-number">6.</span> <span class="nav-text">六、设置和获取文本内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#七、获取-设置css"><span class="nav-number">7.</span> <span class="nav-text">七、获取&#x2F;设置css</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#注意-：但是如果使用IE浏览器，那么将会显示不出边框的样式值"><span class="nav-number">7.1.</span> <span class="nav-text">注意 ：但是如果使用IE浏览器，那么将会显示不出边框的样式值</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八、jQuery选择器"><span class="nav-number">8.</span> <span class="nav-text">八、jQuery选择器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、什么是jQuery"><span class="nav-number">1.</span> <span class="nav-text">一、什么是jQuery</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、-如何使用jQuery（简单了解）"><span class="nav-number">2.</span> <span class="nav-text">二、 如何使用jQuery（简单了解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、jQuery的各个版本"><span class="nav-number">3.</span> <span class="nav-text">三、jQuery的各个版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、jQuery的入口函数"><span class="nav-number">4.</span> <span class="nav-text">四、jQuery的入口函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、jQuery中的"><span class="nav-number">5.</span> <span class="nav-text">五、jQuery中的   $</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、设置和获取文本内容"><span class="nav-number">6.</span> <span class="nav-text">六、设置和获取文本内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#七、获取-设置css"><span class="nav-number">7.</span> <span class="nav-text">七、获取&#x2F;设置css</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#注意-：但是如果使用IE浏览器，那么将会显示不出边框的样式值"><span class="nav-number">7.1.</span> <span class="nav-text">注意 ：但是如果使用IE浏览器，那么将会显示不出边框的样式值</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八、jQuery选择器"><span class="nav-number">8.</span> <span class="nav-text">八、jQuery选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#九、jQuery设置下拉菜单"><span class="nav-number">9.</span> <span class="nav-text">九、jQuery设置下拉菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#十、鼠标事件"><span class="nav-number">10.</span> <span class="nav-text">十、鼠标事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#十一、高亮显示"><span class="nav-number">11.</span> <span class="nav-text">十一、高亮显示</span></a></li></ol></div>
             
 
           </div>
